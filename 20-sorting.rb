@@ -18,3 +18,16 @@ array = filter_even(arr).uniq.sort
 
 
 puts "___#{array}_____" # 应该是 [42, 46, 68, 86]
+
+# i = 1
+# arr.each_with_index do |arr,j|
+#   i = j+1
+#   while i < arr.size
+#     if arr > arr[i]
+#       arr[j] = arr[i]
+#       arr[i] = arr
+#     end
+#     i= i + 1
+#   end
+# end
+# return arr
