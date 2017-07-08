@@ -8,27 +8,27 @@ arr = [
   { "name" => "Vincent", "age" => 6 },
 ]
 
-def filter(arr)
-  array = []
-  arr.each do |arr|
-    if arr["age"] >=18
-      array << arr
-    end
-  end
-  return array
-  i = 0
-  while i < array.size
-    j = i +1
-    while j < array.size
-      if array[i]["age"] > array[j]["age"]
-        array[i], array[j] = array[j], array[i]
-      end
-      j +=1
-    end
-    i +=1
-  end
-  return array
-end
+# def filter(arr)
+#   array = []
+#   arr.each do |arr|
+#     if arr["age"] >=18
+#       array << arr
+#     end
+#   end
+#   return array
+#   i = 0
+#   while i < array.size
+#     j = i +1
+#     while j < array.size
+#       if array[i]["age"] > array[j]["age"]
+#         array[i], array[j] = array[j], array[i]
+#       end
+#       j +=1
+#     end
+#     i +=1
+#   end
+#   return array
+# end
 
 def filter(arr)
   array = []
