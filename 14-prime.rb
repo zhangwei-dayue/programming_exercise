@@ -6,9 +6,11 @@ def is_prime(n)
      a= n % i
      if a != 0
        i+=1
+       return true
      else
-       return false
+
        break
+       return false
      end
   end
 end
